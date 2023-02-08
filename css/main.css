@@ -25,7 +25,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     height: 90px;
-    padding: 30px;
+    padding: 15px;
     background-color: rgba(31, 92, 85, 0.96);
 }
 
@@ -82,22 +82,28 @@ a:active {
 }
 
 
-@media /*screen and*/ (max-width: 849px) {
+@media
+
+/*screen and*/
+(max-width: 849px) {
     .navbar li a {
         font-size: 13px;
     }
 }
 
-@media /*screen and*/ (max-width: 780px) {
+@media
+
+/*screen and*/
+(max-width: 780px) {
 
     .navbar-checkbox {
-        display:  block;
+        display: block;
     }
-    
 
-    .navbar{
+
+    .navbar {
         flex-direction: column;
-        position:absolute ;
+        position: absolute;
         width: 100%;
         top: 0;
         left: 0;
@@ -106,13 +112,13 @@ a:active {
         transition: transform 0.3s;
     }
 
-    .navbar li{
+    .navbar li {
         padding: 15px;
     }
 
-    #nav-check:checked ~ .navbar{
+    #nav-check:checked~.navbar {
         transform: translateY(33%);
-        
+
     }
 
 }
@@ -138,51 +144,61 @@ a:active {
     padding: 0 200px;
 }
 
-.destacados {
-    padding: 30px 10px;
+.games {
+    padding: 30px 0;
 }
 
-.destacados h2 {
+.games h2 {
     font-size: 30px;
     padding: 10px;
 }
 
-.destacados__container {
+.games__container {
     background-color: rgba(220, 215, 215, 0.6);
 }
 
-.container__games {
+.container__items {
     display: flex;
 }
 
-.games {
+.game {
     display: flex;
     flex-direction: column;
     align-items: center;
     color: black;
     padding: 20px;
+    transition: all 0.3s;
 }
 
-.games p {
+.game p {
+    text-transform: uppercase;
     text-shadow: 2px 2px 4px #000000;
 }
 
-.games img {
+.game img {
     width: 100%;
     height: auto;
 }
 
+.game:hover{
+    transform: scale(1.08);
+}
+
 /*------------------------NOTICIAS------------------------*/
+
+.noticias {
+    background-color: rgba(129, 129, 129, 0.5);
+}
 
 .noticias h1 {
     text-align: center;
-    margin: 40px 0;
+    padding: 40px 0;
     text-decoration-line: overline underline;
 }
 
 .contenedor-noticias {
     padding: 30px;
-    background-color: rgba(129, 129, 129, 0.5);
+
 }
 
 .noticia {
@@ -242,6 +258,7 @@ a:active {
 }
 
 .plataformas__cont p {
+    font-size: 1vw;
     text-align: justify;
 }
 
@@ -264,14 +281,18 @@ a:active {
     flex-direction: row-reverse;
 }
 
-@media screen and (max-width: 899px) {
+@media (max-width: 899px) {
     .container__plataformas {
         flex-direction: column;
         text-align: center;
     }
+
+    .plataformas__cont p {
+        font-size: 2vw;
+    }
 }
 
-@media screen and (max-width: 555px) {
+@media (max-width: 555px) {
     .plataformas h1 {
         font-size: 20px;
     }
@@ -293,7 +314,7 @@ a:active {
     }
 
     .plataformas__cont p {
-        font-size: 12px;
+        font-size: 2.8vw;
     }
 }
 
